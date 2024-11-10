@@ -1,0 +1,27 @@
+close all;
+pkg load statistics;
+x=-5:0.1:5;
+y=normpdf(x,0,1);
+subplot(2,2,1);
+plot(x,y);
+xlabel('x');
+ylabel('pdf');
+title('normpdf mean 0 std dev 1');
+y=normpdf(x,1,1);
+subplot(2,2,2);
+plot(x,y);
+xlabel('x');
+ylabel('pdf');
+title('normpdf mean 1 std dev 1');
+y=normpdf(x,2,1)
+subplot(2,2,3);
+plot(x,y);
+xlabel('x');
+ylabel('pdf');
+title('normpdf mean 2 std dev 1');
+y=normpdf(x,3,1);
+subplot(2,2,4);
+plot(x,y);
+xlabel('x');
+ylabel('pdf');
+title('normpdf mean 3 std dev 1');
